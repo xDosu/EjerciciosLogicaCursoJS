@@ -48,10 +48,11 @@
                return false;
           }
 
-          alert(palindromo(prompt("Ingrese una palabra")));
-
           /* 8) Programa una función que elimine cierto patrón de caracteres de un texto dado, pe. miFuncion("xyz1, xyz2, xyz3, xyz4 y xyz5", "xyz") devolverá  "1, 2, 3, 4 y 5 */
 
+          eliminarPatron = (texto, patron) => texto.replaceAll(patron, '');
+
+          alert(eliminarPatron(prompt("Ingrese un texto: "), prompt("Ingrese un patron : ")));
 
 
           /* 9) Programa una función que obtenga un numero aleatorio entre 501 y 600 */
