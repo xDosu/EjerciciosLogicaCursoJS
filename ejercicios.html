@@ -148,7 +148,16 @@
 
           /* 15) Programa una función para convertir números de base binaria a decimal y viceversa, pe. miFuncion(100,2) devolverá 4 base 10 */
 
-
+          function convertirBases(numero, base) {
+               const numeroConvertido = [];
+               if ((typeof numero === 'number') && (typeof base === 'number')) {
+                    if (base == 10)
+                         return `${numero.toString(2)} base 2`;
+                    else if (base == 2)
+                         return `${parseInt(numero, 2)} base 10`;
+               }
+               return false;
+          }
 
           /* 16) Programa una función que devuelva el monto final después de aplicar un descuento a una cantidad dada, pe. miFuncion(1000, 20) devolverá 800 */
 
