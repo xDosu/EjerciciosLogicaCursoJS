@@ -125,7 +125,14 @@
 
           /* 13) Programa una función que determine si un número es par o impar, pe. miFuncion(29) devolverá Impar */
 
-
+          function esPar(entero) {
+               if (typeof entero === 'number') {
+                    if (entero % 2 == 0)
+                         return 'Par';
+                    return 'Impar';
+               }
+               return false;
+          }
 
           /* 14) Programa una función para convertir grados Celsius a Fahrenheit y viceversa, pe. miFuncion(0,"C") devolverá 32°F */
 
