@@ -183,7 +183,13 @@
 
           /* 18) Programa una función que dada una cadena de texto cuente el número de vocales y consonantes, pe. miFuncion("Hola Mundo") devuelva Vocales: 4, Consonantes: 5 */
 
-
+          function calcularVocales(texto) {
+               if (typeof texto === 'string') {
+                    let cantVocales = texto.match(new RegExp('[aeiou]', 'gi')).length
+                    return `Vocales: ${cantVocales}, Consonantes: ${texto.split(' ').join('').length - cantVocales}`
+               }
+               return false;
+          }
 
           /* 19) Programa una función que valide que un texto sea un nombre válido, pe. miFuncion("Jonathan MirCha") devolverá verdadero */
 
