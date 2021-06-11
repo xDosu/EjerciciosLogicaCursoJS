@@ -136,7 +136,15 @@
 
           /* 14) Programa una función para convertir grados Celsius a Fahrenheit y viceversa, pe. miFuncion(0,"C") devolverá 32°F */
 
-
+          function convertidorDeGrados(grados, unidad) {
+               if ((typeof grados === 'number') && (typeof unidad === 'string')) {
+                    if (unidad == "C")
+                         return ((grados * 9 / 5) + 32);
+                    else if (unidad == "F")
+                         return ((grados - 32) * 5 / 9);
+               }
+               return false;
+          }
 
           /* 15) Programa una función para convertir números de base binaria a decimal y viceversa, pe. miFuncion(100,2) devolverá 4 base 10 */
 
