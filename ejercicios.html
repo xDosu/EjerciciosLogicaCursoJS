@@ -203,7 +203,14 @@
 
           /* 20) Programa una función que valide que un texto sea un email válido, pe. miFuncion("jonmircha@gmail.com") devolverá verdadero */
 
-
+          function validarEmail(email) {
+               const re = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+               if (typeof email === 'string') {
+                    if (re.test(email))
+                         return true;
+               }
+               return false;
+          }
 
           /* 21) Programa una función que dado un array numérico devuelve otro array con los números elevados al cuadrado, pe. mi_funcion([1, 4, 5]) devolverá [1, 16, 25] */
 
