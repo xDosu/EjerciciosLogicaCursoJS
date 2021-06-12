@@ -214,7 +214,15 @@
 
           /* 21) Programa una función que dado un array numérico devuelve otro array con los números elevados al cuadrado, pe. mi_funcion([1, 4, 5]) devolverá [1, 16, 25] */
 
-
+          function elevarArreglo(arreglo) {
+               if (Array.isArray(arreglo)) {
+                    if (arreglo.every(elem => (typeof elem === 'number')))
+                         arreglo.forEach(function (part, index) { this[index] = Math.pow(this[index], 2) }, arreglo);
+                    else
+                         return false;
+               } else
+                    return false;
+          }
 
           /* 22) Programa una función que dado un array devuelva el número mas alto y el más bajo de dicho array, pe. miFuncion([1, 4, 5, 99, -60]) devolverá [99, -60] */
 
